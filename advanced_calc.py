@@ -48,15 +48,15 @@ def equation():
         print('Equacao realizada com sucesso, X = ' + str(resultado))
      elif operacao == '2':
           resultado = (int(b) + int(a))
-          resultado= resultado / x
+          resultado = (int(resultado) / int(x))
           print('Equacao realizada com sucesso, X = ' + str(resultado))
      elif operacao == '3': 
           resultado = (int(b) * int(a))
-          resultado = resultado / x
+          resultado = (int(resultado) / int(x))
           print('Equacao realizada com sucesso, X = ' + str(resultado))
      elif operacao == '4':
           resultado = (int(b) / int(a))
-          resultado = resultado / x
+          resultado = (int(resultado) / int(x))
           print('Equacao realizada com sucesso, X = ' + str(resultado))
      
 def calculadora():
