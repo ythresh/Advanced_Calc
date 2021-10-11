@@ -1,16 +1,5 @@
 import os
-os.system('clear') or None
-print("""\033[1;32m
-                                                      
- _____   _                       _    _____     _     
-|  _  |_| |_ _ ___ ___ ___ ___ _| |  |     |___| |___ 
-|     | . | | | .'|   |  _| -_| . |  |   --| .'| |  _|
-|__|__|___|\_/|__,|_|_|___|___|___|  |_____|__,|_|___|
-                                                      
-Made by - yThresh
-Instagram - @ythresh666
-Discord - ythresh#5593
-""")
+os.system('cls' if os.name == 'nt' else 'clear')
 def regra3():
         os.system('cls' if os.name == 'nt' else 'clear')
         print("""\033[1;34m
@@ -102,12 +91,34 @@ def calculadora():
                resultado = (valor2 / valor1)
           print('A divisão de realizada é igual a : ' + str(resultado))
 
-print('[1] - Calcular regra de 3\n[2] - Resolver equação\n[3] - Calculadora normal\n')
-ops = input('Qual modo deseja usar ? ')
-if ops == '1':
-     regra3()
-elif ops == '2':
-     equation()
-elif ops == '3':
-     calculadora()
+def calcular():
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("""\033[1;32m
+                                                      
+ _____   _                       _    _____     _     
+|  _  |_| |_ _ ___ ___ ___ ___ _| |  |     |___| |___ 
+|     | . | | | .'|   |  _| -_| . |  |   --| .'| |  _|
+|__|__|___|\_/|__,|_|_|___|___|___|  |_____|__,|_|___|
+                                                      
+Made by - yThresh
+Instagram - @ythresh666
+Discord - ythresh#5593
+""")
+      print('[1] - Calcular regra de 3\n[2] - Resolver equação\n[3] - Calculadora normal\n')
+      ops = input('Qual modo deseja usar ? ')
+      if ops == '1':
+         regra3()
+      elif ops == '2':
+           equation()
+      elif ops == '3':
+           calculadora()
+
+
+calcular()
+while True:
+     mais_um = input('Deseja fazer uma nova operação ? [S/N] ')
+     if mais_um.upper() == 'S':
+        calcular()
+     elif mais_um.upper() == 'S':
+          exit()
 
