@@ -119,6 +119,6 @@ while True:
      mais_um = input('Deseja fazer uma nova operação ? [S/N] ')
      if mais_um.upper() == 'S':
         calcular()
-     elif mais_um.upper() == 'S':
+     elif mais_um.upper() == 'N':
           exit()
 
