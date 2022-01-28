@@ -18,12 +18,12 @@ def regra3():
           d = (int(a) * int(b))
           resultado = (int(d) / int(c))
           print('[!] - X = ' + str(resultado))
-        elif proporcao == 'I' or 'i':
+        elif proporcao.upper() == 'I':
           a = input('[*] - Insira o primeiro número da situação problema : ')
           b = input('[*] - Insira o segundo número da situação problema : ')
           c = input('[*] - Insira o terceiro número da situação problema : ')
-          d = a * c
-          resultado = d / a
+          d = int(a) * int(b)
+          resultado = int(d) / int(c)
           print('[!] - X = ' + str(resultado))
 
 def equation():
@@ -105,7 +105,7 @@ def calcular():
                                                       
 Made by - yThresh
 Instagram - @ythresh666
-Discord - yThresh#0001
+Discord - ythresh#5593
 """)
       print('[1] - Calcular regra de 3\n[2] - Resolver equação\n[3] - Calculadora normal\n')
       ops = input('Qual modo deseja usar ? ')
