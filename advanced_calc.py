@@ -105,7 +105,7 @@ def calcular():
                                                       
 Made by - yThresh
 Instagram - @ythresh666
-Discord - ythresh#5593
+Discord - yThresh#0001
 """)
       print('[1] - Calcular regra de 3\n[2] - Resolver equação\n[3] - Calculadora normal\n')
       ops = input('Qual modo deseja usar ? ')
