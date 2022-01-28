@@ -10,18 +10,21 @@ def regra3():
           |___|                                      
 
 """)
-        a = input('[*] - Insira o prineiro número da situação problema : ')
-        b = input('[*] - Insira o segundo número da situação problema : ')
-        c = input('[*] - Insira o terceiro número da situação problema : ')
         proporcao = input('[*] - É inversamente ou diretamente proporcional [D/I] : ')
-        if proporcao == 'D' or 'd':
-           d = (int(a) * int(b))
-           resultado = (int(a) / int(c))
-           print('[!] - X = ' + str(resultado))
+        if proporcao.upper() == 'D':
+          a = input('[*] - Insira o segundo número da situação problema : ')
+          b = input('[*] - Insira o terceiro número da situação problema : ')
+          c = input('[*] - Insira o primeiro número da situação problema : ')
+          d = (int(a) * int(b))
+          resultado = (int(d) / int(c))
+          print('[!] - X = ' + str(resultado))
         elif proporcao == 'I' or 'i':
-           d = a * c
-           resultado = d / a
-           print('[!] - X = ' + str(resultado))
+          a = input('[*] - Insira o primeiro número da situação problema : ')
+          b = input('[*] - Insira o segundo número da situação problema : ')
+          c = input('[*] - Insira o terceiro número da situação problema : ')
+          d = a * c
+          resultado = d / a
+          print('[!] - X = ' + str(resultado))
 
 def equation():
      os.system('cls' if os.name == 'nt' else 'clear')
