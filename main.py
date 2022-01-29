@@ -115,22 +115,8 @@ Discord - ythresh#5593
            equation()
       elif ops == '3':
            calculadora()
-      elif ops == 'segredo':
-        secret()
 
-def secret():
-  key = input('Ok... vamos verificar se você pode acessar essa informação\nInsira a key informada pelo autor do script - ')
-  if key == '123456':
-    a = input('eae maninha, blz? [S/N]\nInsira a resposta - ')
-    if a.upper() == 'S':
-      print('AEEEEEEEEEEEEEEEEEEE QUE BOM QUE VOCÊ TÁ BEEEEEMM')
-      nome = input('porém, será q é vc msm maninha? vamos verificar, como que eu te chamo normalmente?\nInsira sua resposta - ')
-      if nome == 'isinha' or 'isa' or 'isabelle' or 'belle' or 'Isa' or 'Isinha':
-        print('a, ok pode ser vc mesmo...')
-        meu_nome = input('porém, mais uma verificação, como vc me chama?\nInsira sua resposta - ')
-        if meu_nome == 'tete' or 'Tete':
-          print('OIEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE ISINHAAAAAAAA')
-          print('OBRIGADO POR SER MINHA AMIGA, VC É UMA DAS MELHORES PESSOAS Q EU JA CONHECI E TUDO AQL Q EU JA TE FALEI ALGUMAS VEZES, TE AMOOOOOOOOOOO MANINHAAAAAAAAAAAA')
+
 calcular()
 while True:
      mais_um = input('\n[?] - Deseja fazer uma nova operação ? [S/N] ')
